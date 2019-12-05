@@ -137,6 +137,14 @@ module Pkg
       },
 
       'fedora' => {
+        'f14' => {
+          architectures: ['i386'],
+          source_architecture: 'SRPMS',
+          package_format: 'rpm',
+          source_package_formats: ['src.rpm'],
+          signature_format: 'v4',
+          repo: true,
+        },
         'f25' => {
           architectures: ['x86_64', 'i386'],
           source_architecture: 'SRPMS',
